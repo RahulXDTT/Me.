@@ -9,13 +9,13 @@ import { FloatingFooterNav } from '@/components/floating-footer-nav'
 const inter = Inter({ subsets: ['latin'] })
 
 export const metadata: Metadata = {
-  title: 'Rahul | Portfolio',
+  title: 'Rahul Samajpati',
   description: 'Personal portfolio showcasing my work and skills',
   openGraph: {
     type: 'website',
     locale: 'en_US',
     url: 'https://RahulXDTT.dev',
-    title: 'Rahul Samajpati',
+    title: '',
     description: 'Personal portfolio showcasing my work and skills',
     siteName: 'Rahul Portfolio',
   },
