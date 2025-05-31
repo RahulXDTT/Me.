@@ -15,7 +15,7 @@ export const metadata: Metadata = {
     type: 'website',
     locale: 'en_US',
     url: 'https://RahulXDTT.dev',
-    title: 'Rahul | Portfolio',
+    title: 'Rahul Samajpati',
     description: 'Personal portfolio showcasing my work and skills',
     siteName: 'Rahul Portfolio',
   },
