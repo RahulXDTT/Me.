@@ -95,7 +95,7 @@ export default function MusicPlayer() {
   };
 
   return (
-    <div className="w-full bg-background/80 backdrop-blur-sm px-4 py-2 flex items-center justify-center space-x-4  top-0 z-40">
+    <div className="w-full bg-background/80 backdrop-blur-sm px-4 py-2 flex items-center justify-center space-x-4 top-0 z-40">
       {/* 1) Album Cover */}
       <div className="w-12 h-12 relative rounded-lg overflow-hidden">
         <Image

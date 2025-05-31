@@ -14,7 +14,7 @@ export function FloatingFooterNav() {
     { name: 'Blog', icon: <Laptop className="h-5 w-5" />, href: 'https://medium.com/@Rahul_Samajpati', isInternal: true },
     { name: 'GitHub', icon: <Github className="h-5 w-5" />, href: 'https://github.com/RahulXDTT', isInternal: false },
     { name: 'LinkedIn', icon: <Linkedin className="h-5 w-5" />, href: 'https://www.linkedin.com/in/rahul-samajpati-7251222b3/', isInternal: false },
-    { name: 'Twitter', icon: <span className="h-5 w-5 flex items-center justify-center">𝕏</span>, href: 'https://x.com/RahulXDTT', isInternal: false },
+    { name: 'Twitter', icon: <span className="h-5 w-5 flex items-center justify-center text-xl">𝕏</span>, href: 'https://x.com/RahulXDTT', isInternal: false },
     { name: 'Email', icon: <Mail className="h-5 w-5" />, href: 'mailto:25srahulmain2004@gmail.com', isInternal: false },
   ]
 
