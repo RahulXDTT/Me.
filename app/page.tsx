@@ -69,7 +69,7 @@ export default function Home() {
               </h1>
               <p className="text-sm md:text-base text-muted-foreground">Error 404: Adulting not found.</p>
             </div>
-            <Avatar className="w-16 h-16 md:w-32 md:h-32 border-2 border-primary/10">
+            <Avatar className="w-20 h-20 md:w-32 md:h-32 border-2 border-primary/10">
               <AvatarImage src="/pp1.jpg" alt="Profile" />
               <AvatarFallback>RS</AvatarFallback>
             </Avatar>
@@ -118,7 +118,7 @@ export default function Home() {
                 key="Codebasics" 
                 company="Codebasics"
                 role="Data Analysis Virtual Internship"
-                period="February 2025 - May 2025"
+                period="Feb 2025 - May 2025"
                 logoSrc="/channels4_profile.jpg"
                 link="https://www.linkedin.com/company/codebasics/"
               />
@@ -147,7 +147,7 @@ export default function Home() {
               />
 
               <EducationItem 
-                key="Manipal University Jaipur(MUJ)" 
+                key="Indus Valley World School" 
                 school="Indus Valley World School"
                 degree="CBSE 12TH - 90.2%"
                 period="2021 - 2022"
@@ -156,8 +156,8 @@ export default function Home() {
               />
 
               <EducationItem 
-                key="Manipal University Jaipur(MUJ)" 
-                school="indus Valley World School"
+                key="Indus Valley World School" 
+                school="Indus Valley World School"
                 degree="CBSE 10TH - 97.2%"
                 period="2019 - 2020"
                 logoSrc="/IVWS_LOGO.jpg"

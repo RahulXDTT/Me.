@@ -10,32 +10,32 @@ import { motion } from 'framer-motion'
 
 export function FloatingFooterNav() {
   const socialLinks = [
-    { name: 'Home', icon: <Home className="h-5 w-5" />, href: '/', isInternal: true },
-    { name: 'Blog', icon: <Laptop className="h-5 w-5" />, href: 'https://medium.com/@Rahul_Samajpati', isInternal: true },
-    { name: 'GitHub', icon: <Github className="h-5 w-5" />, href: 'https://github.com/RahulXDTT', isInternal: false },
-    { name: 'LinkedIn', icon: <Linkedin className="h-5 w-5" />, href: 'https://www.linkedin.com/in/rahul-samajpati-7251222b3/', isInternal: false },
-    { name: 'Twitter', icon: <span className="h-5 w-5 flex items-center justify-center text-xl">𝕏</span>, href: 'https://x.com/RahulXDTT', isInternal: false },
-    { name: 'Email', icon: <Mail className="h-5 w-5" />, href: 'mailto:25srahulmain2004@gmail.com', isInternal: false },
+    { name: 'Home', icon: <Home className="h-4 w-4 md:h-5 md:w-5" />, href: '/', isInternal: true },
+    { name: 'Blog', icon: <Laptop className="h-4 w-4 md:h-5 md:w-5" />, href: 'https://medium.com/@Rahul_Samajpati', isInternal: true },
+    { name: 'GitHub', icon: <Github className="h-4 w-4 md:h-5 md:w-5" />, href: 'https://github.com/RahulXDTT', isInternal: false },
+    { name: 'LinkedIn', icon: <Linkedin className="h-4 w-4 md:h-5 md:w-5" />, href: 'https://www.linkedin.com/in/rahul-samajpati-7251222b3/', isInternal: false },
+    { name: 'Twitter', icon: <span className="h-4 w-4 md:h-5 md:w-5 flex items-center justify-center text-sm md:text-xl">𝕏</span>, href: 'https://x.com/RahulXDTT', isInternal: false },
+    { name: 'Email', icon: <Mail className="h-4 w-4 md:h-5 md:w-5" />, href: 'mailto:25srahulmain2004@gmail.com', isInternal: false },
   ]
 
   return (
     <TooltipProvider>
       <motion.div 
-        className="fixed bottom-4 left-0 right-0 flex justify-center z-50"
+        className="fixed bottom-1 md:bottom-4 left-0 right-0 flex justify-center z-50"
         initial={{ opacity: 0, y: 50 }}
         animate={{ opacity: 1, y: 0 }}
         transition={{ duration: 0.5, ease: "easeOut" }}
       >
-        <nav className="inline-flex items-center bg-black/30 dark:bg-white/30 backdrop-blur-md rounded-full px-6 py-2">
+        <nav className="inline-flex items-center bg-black/30 dark:bg-white/30 backdrop-blur-md rounded-full px-1.5 py-0.5 md:px-6 md:py-2">
         {socialLinks.map((link) => (
-            <div key={link.name} className="mx-1 transition-all duration-200 ease-out hover:mx-3">
+            <div key={link.name} className="mx-0.25 md:mx-1 transition-all duration-200 ease-out hover:mx-1 md:hover:mx-3">
               <Tooltip>
             <TooltipTrigger asChild>
               <Button
                 variant="ghost"
                 size="icon"
                 className={cn(
-                      "text-white dark:text-black p-2 rounded-full transition-all duration-200 ease-out hover:scale-110 focus:outline-none focus:ring-2 focus:ring-indigo-500",
+                      "text-white dark:text-black p-0.5 md:p-2 rounded-full transition-all duration-200 ease-out hover:scale-110 focus:outline-none focus:ring-2 focus:ring-indigo-500",
                 )}
                     asChild
               >
@@ -56,7 +56,7 @@ export function FloatingFooterNav() {
           </Tooltip>
             </div>
         ))}
-          <div className="mx-1 transition-all duration-200 ease-out hover:mx-3">
+          <div className="mx-0.25 md:mx-1 transition-all duration-200 ease-out hover:mx-1 md:hover:mx-3">
             <Tooltip>
               <TooltipTrigger asChild>
                 <ThemeToggle />
