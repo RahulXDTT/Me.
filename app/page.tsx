@@ -118,7 +118,7 @@ export default function Home() {
                 key="Codebasics" 
                 company="Codebasics"
                 role="Data Analysis Virtual Internship"
-                period="Feb 2025 - May 2025"
+                period="Feb - May 2025"
                 logoSrc="/channels4_profile.jpg"
                 link="https://www.linkedin.com/company/codebasics/"
               />
