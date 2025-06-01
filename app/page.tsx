@@ -142,10 +142,30 @@ export default function Home() {
                 key="Manipal University Jaipur(MUJ)" 
                 school="Manipal University Jaipur(MUJ)"
                 degree="Computer Science and Engineering"
-                period="2020 - 2026"
+                period="2022 - 2026"
                 logoSrc="/muj.jpg"
                 link="https://www.linkedin.com/school/manipal-university-jaipur/posts/?feedView=all"
               />
+
+              <EducationItem 
+                key="Manipal University Jaipur(MUJ)" 
+                school="Indus Valley World School"
+                degree="CBSE 12TH - 90.2%"
+                period="2021 - 2022"
+                logoSrc="/IVWS_LOGO.jpg"
+                link="https://www.linkedin.com/school/indus-valley-world-school/"
+              />
+
+              <EducationItem 
+                key="Manipal University Jaipur(MUJ)" 
+                school="indus Valley World School"
+                degree="CBSE 10TH - 97.2%"
+                period="2019 - 2020"
+                logoSrc="/IVWS_LOGO.jpg"
+                link="https://www.linkedin.com/school/indus-valley-world-school/"
+              />
+
+            
             </div>
           </motion.section>
 
