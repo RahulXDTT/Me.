@@ -65,9 +65,9 @@ export default function Subscribe() {
   }
 
   return (
-    <section className="space-y-6 text-center">
-      <h2 className="text-2xl font-bold">Stay Updated</h2>
-      <p className="text-muted-foreground">Subscribe to my email list. I do not spam, ever.</p>
+    <section className="space-y-3 text-center">
+      <h2 className="text-xl font-bold">Stay Updated</h2>
+      <p className="text-sm text-muted-foreground">Subscribe to my email list. I do not spam, ever.</p>
       <form onSubmit={handleSubmit} className="flex gap-2 max-w-md mx-auto">
         <Input 
           type="email" 
@@ -76,18 +76,19 @@ export default function Subscribe() {
           onChange={(e) => setEmail(e.target.value)}
           required
           disabled={submitting}
-          className="bg-background/50" 
+          className="bg-background/50 h-8 text-sm" 
         />
         <Button 
           type="submit" 
           variant="secondary"
           disabled={submitting}
+          className="h-8 text-sm"
         >
           {submitting ? 'Subscribing...' : 'Subscribe'}
         </Button>
       </form>
       {message && (
-        <p className={`mt-4 ${isError ? 'text-red-500' : 'text-white'}`}>
+        <p className={`mt-2 text-sm ${isError ? 'text-red-500' : 'text-white'}`}>
           {message}
         </p>
       )}

@@ -49,27 +49,27 @@ export default function Home() {
   }
 
   return (
-    <main className="min-h-screen bg-background text-foreground">
+    <main className="bg-background text-foreground">
       <MusicPlayer />
-      <div className="max-w-3xl mx-auto px-4 py-16 sm:py-24 space-y-20">
+      <div className="max-w-3xl mx-auto px-4 py-8 space-y-8">
         <AnimatePresence>
           {/* Hero Section */}
           <motion.section 
             key="home"
             id="home"
-            className="scroll-mt-16 flex flex-col sm:flex-row items-start sm:items-center justify-between gap-8"
+            className="scroll-mt-16 flex flex-row items-center justify-between space-x-3 md:space-x-6 px-4 py-6"
             initial="initial"
             animate="animate"
             variants={fadeInUp}
             transition={{ delay: 0.1 }}
           >
-            <div className="space-y-3">
-              <h1 className="text-4xl sm:text-5xl font-bold tracking-tight">
+            <div className="flex-1 space-y-1 md:space-y-2">
+              <h1 className="text-2xl md:text-4xl font-bold tracking-tight">
                 Hi, Rahul S. here
               </h1>
-              <p className="text-lg text-muted-foreground">Error 404: Adulting not found.</p>
+              <p className="text-sm md:text-base text-muted-foreground">Error 404: Adulting not found.</p>
             </div>
-            <Avatar className="w-40 h-40 border-2 border-primary/10">
+            <Avatar className="w-16 h-16 md:w-32 md:h-32 border-2 border-primary/10">
               <AvatarImage src="/pp1.jpg" alt="Profile" />
               <AvatarFallback>RS</AvatarFallback>
             </Avatar>
@@ -79,19 +79,18 @@ export default function Home() {
           <motion.section 
             key="about"
             id="about"
-            className="scroll-mt-16 space-y-6"
+            className="scroll-mt-16 space-y-3"
             initial="initial"
             animate="animate"
             variants={fadeInUp}
             transition={{ delay: 0.25 }}
           >
-            <h2 className="text-2xl font-bold">About</h2>
-            <div className="space-y-4 text-muted-foreground">
+            <h2 className="text-xl font-bold">About</h2>
+            <div className="space-y-2 text-sm text-muted-foreground">
               <p>Learning never ends, that's what I love about it.</p>
               <p>I like technology and studying economy. </p>
               <p>I'm a keen observer of market trends. Specifically, the trend where my money disappears.</p>
               <p>I love staring blankly at a screen, yelling at my monitor, and occasionally writing functional code.</p>
-              
             </div>
           </motion.section>
 
@@ -99,14 +98,14 @@ export default function Home() {
           <motion.section 
             key="experience"
             id="experience"
-            className="scroll-mt-16 space-y-6"
+            className="scroll-mt-16 space-y-3"
             initial="initial"
             animate="animate"
             variants={fadeInUp}
             transition={{ delay: 0.4 }}
           >
-            <h2 className="text-2xl font-bold">Some places I worked at</h2>
-            <div className="space-y-6">
+            <h2 className="text-xl font-bold">Some places I worked at</h2>
+            <div className="space-y-3">
               <ExperienceItem 
                 key="Accenture" 
                 company="Accenture"
@@ -130,14 +129,14 @@ export default function Home() {
           <motion.section 
             key="education"
             id="education"
-            className="scroll-mt-16 space-y-6"
+            className="scroll-mt-16 space-y-3"
             initial="initial"
             animate="animate"
             variants={fadeInUp}
             transition={{ delay: 0.55 }}
           >
-            <h2 className="text-2xl font-bold">Education</h2>
-            <div className="space-y-6">
+            <h2 className="text-xl font-bold">Education</h2>
+            <div className="space-y-3">
               <EducationItem 
                 key="Manipal University Jaipur(MUJ)" 
                 school="Manipal University Jaipur(MUJ)"
@@ -164,8 +163,6 @@ export default function Home() {
                 logoSrc="/IVWS_LOGO.jpg"
                 link="https://www.linkedin.com/school/indus-valley-world-school/"
               />
-
-            
             </div>
           </motion.section>
 
@@ -173,22 +170,22 @@ export default function Home() {
           <motion.section 
             key="skills"
             id="skills"
-            className="scroll-mt-16 space-y-6"
+            className="scroll-mt-16 space-y-3"
             initial="initial"
             animate="animate"
             variants={fadeInUp}
             transition={{ delay: 0.7 }}
           >
-            <h2 className="text-2xl font-bold">Skills</h2>
+            <h2 className="text-xl font-bold">Skills</h2>
             <div className="flex flex-wrap gap-2">
-              <Badge variant="secondary" className="text-sm py-1.5 px-3">React</Badge>
-              <Badge variant="secondary" className="text-sm py-1.5 px-3">Next.js</Badge>
-              <Badge variant="secondary" className="text-sm py-1.5 px-3">Typescript</Badge>
-              <Badge variant="secondary" className="text-sm py-1.5 px-3">Python</Badge>
-              <Badge variant="secondary" className="text-sm py-1.5 px-3">Pytorch</Badge>
-              <Badge variant="secondary" className="text-sm py-1.5 px-3">Postgres</Badge>
-              <Badge variant="secondary" className="text-sm py-1.5 px-3">C++</Badge>
-              <Badge variant="secondary" className="text-sm py-1.5 px-3">Shitposting</Badge>
+              <Badge variant="secondary" className="text-xs py-1 px-2">React</Badge>
+              <Badge variant="secondary" className="text-xs py-1 px-2">Next.js</Badge>
+              <Badge variant="secondary" className="text-xs py-1 px-2">Typescript</Badge>
+              <Badge variant="secondary" className="text-xs py-1 px-2">Python</Badge>
+              <Badge variant="secondary" className="text-xs py-1 px-2">Pytorch</Badge>
+              <Badge variant="secondary" className="text-xs py-1 px-2">Postgres</Badge>
+              <Badge variant="secondary" className="text-xs py-1 px-2">C++</Badge>
+              <Badge variant="secondary" className="text-xs py-1 px-2">Shitposting</Badge>
             </div>
           </motion.section>
 
@@ -206,14 +203,14 @@ export default function Home() {
           {/* Call to Action */}
           <motion.section 
             key="call-to-action"
-            className="text-center space-y-4"
+            className="text-center space-y-2"
             initial="initial"
             animate="animate"
             variants={fadeInUp}
             transition={{ delay: 1 }}
           >
             <div className="h-1 w-8 bg-primary/30 mx-auto rounded-full" />
-            <p className="text-xl md:text-2xl font-poppins text-muted-foreground">
+            <p className="text-base md:text-lg font-poppins text-muted-foreground">
               say hello on{' '}
               <a
                 href="https://twitter.com/RahulXDTT"
