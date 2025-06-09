@@ -70,7 +70,7 @@ export default function Home() {
               <p className="text-sm md:text-base text-muted-foreground">Error 404: Adulting not found.</p>
             </div>
             <Avatar className="w-20 h-20 md:w-32 md:h-32 border-2 border-primary/10">
-              <AvatarImage src="/pp1.jpg" alt="Profile" />
+              <AvatarImage src="/xpp.jpg" alt="Profile" />
               <AvatarFallback>RS</AvatarFallback>
             </Avatar>
           </motion.section>
